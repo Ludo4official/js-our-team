@@ -33,7 +33,12 @@ const members = [
 
 console.log(members);
 
-for (let key in members) {
-    console.log(key + ':', members[key])
+for (let i = 0; i < members.length; i++) {
+
+    console.log(members[i].name, members[i].role, members[i].img);
+    document.getElementById('container').innerHTML += '<div class="text">' + members[i].name + '//' + members[i].role + '//' + members[i].img + '</div>';
 }
+
+
+
 
